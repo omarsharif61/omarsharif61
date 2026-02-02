@@ -34,8 +34,8 @@ const Hero = () => {
             <img 
               src={LOGO_URL} 
               alt="Omar Sharif - International Yoga" 
-              className="h-20 md:h-24 lg:h-28 w-auto object-contain brightness-0 invert drop-shadow-lg"
-              style={{ maxWidth: '220px' }}
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain drop-shadow-lg"
+              style={{ maxWidth: '220px', filter: 'brightness(0) invert(1)' }}
             />
           </div>
 
