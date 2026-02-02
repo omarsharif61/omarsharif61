@@ -31,12 +31,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img 
-              src={LOGO_URL} 
-              alt="Omar Sharif - International Yoga" 
-              className="h-12 md:h-14 w-auto object-contain transition-all duration-300"
-              style={{ maxWidth: '160px', ...logoStyle }}
-            />
+            <div className={`transition-all duration-300 ${logoContainerStyle}`}>
+              <img 
+                src={LOGO_URL} 
+                alt="Omar Sharif - International Yoga" 
+                className="h-10 md:h-12 w-auto object-contain"
+                style={{ maxWidth: '150px' }}
+              />
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
