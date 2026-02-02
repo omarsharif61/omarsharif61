@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, ChevronDown } from 'lucide-react';
-import { heroData } from '../data/mock';
+import { ArrowRight } from 'lucide-react';
+
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
+const HERO_BG = "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=80";
 
 const Hero = () => {
   const scrollToContent = () => {
@@ -16,7 +18,7 @@ const Hero = () => {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src={heroData.backgroundImage}
+          src={HERO_BG}
           alt="Yoga meditation"
           className="w-full h-full object-cover"
         />
@@ -27,9 +29,19 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
         <div className="max-w-3xl">
+          {/* Brand Logo as Hero Anchor */}
+          <div className="mb-8">
+            <img 
+              src={LOGO_URL} 
+              alt="Omar Sharif - International Yoga" 
+              className="h-20 md:h-24 lg:h-28 w-auto object-contain brightness-0 invert drop-shadow-lg"
+              style={{ maxWidth: '220px' }}
+            />
+          </div>
+
           {/* Tagline */}
           <p className="text-[#c4cfc0] uppercase tracking-[0.2em] text-sm mb-6 font-medium">
-            {heroData.tagline}
+            International Yoga Tourism Business
           </p>
 
           {/* Title */}
@@ -41,7 +53,7 @@ const Hero = () => {
 
           {/* Subtitle */}
           <p className="text-lg text-gray-200 mb-10 max-w-2xl leading-relaxed">
-            {heroData.subtitle}
+            Experience luxury wellness retreats that reconnect mind, body, and nature. Professional tourism services backed by ENC HOLIDAY's expertise.
           </p>
 
           {/* CTA Buttons */}
