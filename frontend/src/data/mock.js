@@ -137,129 +137,129 @@ export const translations = {
     nav: {
       home: "Ana Sayfa",
       about: "Hakkımızda",
-      retreats: "Kamplar",
-      services: "Hizmetler",
-      whyUs: "Neden Biz",
+      retreats: "Yoga Kampları",
+      services: "Hizmetlerimiz",
+      whyUs: "Neden Biz?",
       gallery: "Galeri",
       contact: "İletişim",
-      bookRetreat: "Kamp Rezervasyonu"
+      bookRetreat: "Rezervasyon Yap"
     },
     // Hero Section
     hero: {
-      tagline: "Uluslararası Yoga Turizm İşletmesi",
-      titlePart1: "Dönüştürücü Yolculuklarla ",
+      tagline: "Uluslararası Yoga Turizmi",
+      titlePart1: "Dönüşüm Yolculuklarıyla ",
       titleHighlight: "İç Huzurunuzu",
       titlePart2: " Yeniden Keşfedin",
-      subtitle: "Zihni, bedeni ve doğayı yeniden birleştiren lüks sağlıklı yaşam kamplarını deneyimleyin. ENC HOLIDAY'in uzmanlığıyla desteklenen profesyonel turizm hizmetleri.",
-      discoverRetreats: "Kampları Keşfet",
+      subtitle: "Zihin, beden ve doğayla yeniden bağ kurmanızı sağlayan lüks wellness kamplarını deneyimleyin. ENC HOLIDAY güvencesiyle profesyonel turizm hizmeti.",
+      discoverRetreats: "Kampları Keşfedin",
       planJourney: "Yolculuğunuzu Planlayın",
-      scroll: "Kaydır"
+      scroll: "Aşağı Kaydır"
     },
     // Why Us Section
     whyUs: {
-      tagline: "Neden Bizi Seçmelisiniz",
-      title: "Modern Hayattan Kutsal Bir Mola",
-      subtitle: "Kamplarımız kaçış değil — kadim bilgeliği lüks seyahat deneyimleriyle birleştiren, kalıcı dönüşüme açılan kapılardır."
+      tagline: "Neden Biz?",
+      title: "Modern Hayattan Huzurlu Bir Mola",
+      subtitle: "Kamplarımız sadece bir kaçış değil; kadim bilgeliği lüks seyahat deneyimiyle buluşturan, kalıcı bir dönüşümün kapılarını aralıyor."
     },
     // Featured Retreats
     featuredRetreats: {
       tagline: "Öne Çıkan Kamplar",
-      title: "Yolculuğunuza Başlayın",
-      viewAll: "Tüm Kampları Görüntüle",
-      from: "Başlayan",
-      learnMore: "Daha Fazla Bilgi",
+      title: "Yolculuğunuz Başlıyor",
+      viewAll: "Tüm Kampları Görün",
+      from: "Başlayan fiyat:",
+      learnMore: "Detaylı Bilgi",
       days: "Gün"
     },
     // Our Story
     story: {
       tagline: "Hikayemiz",
-      title: "Kadim Bilgeliğin Modern Mükemmellikle Buluştuğu Yer",
-      paragraph1: "Omar Sharif tarafından kurulan International Yoga, bir seyahat şirketinden fazlasıdır — bilinçli yaşamın felsefesidir. Yoga kamplarının dönüşüme açılan kapılar olduğuna, modern hayatın taleplerinden kutsal bir mola sunduğuna inanıyoruz.",
-      paragraph2: "ENC HOLIDAY'in profesyonel turizm altyapısıyla desteklenerek, rezervasyondan dönüşe kadar sözleşmeli fiyatlar ve kişiselleştirilmiş bakımla kaliteli hizmet garantisi veriyoruz.",
-      quote: "Nefese, doğaya ve iç dengeye dönüş.",
-      learnStory: "Hikayemizi Öğrenin"
+      title: "Kadim Bilgelik, Modern Mükemmellik",
+      paragraph1: "Omar Sharif International Yoga, sıradan bir seyahat şirketi değil; bilinçli yaşamın bir felsefesidir. Yoga kamplarının gerçek bir dönüşüm kapısı olduğuna ve modern hayatın yoğunluğundan uzaklaşmak için eşsiz bir fırsat sunduğuna inanıyoruz.",
+      paragraph2: "ENC HOLIDAY'in profesyonel turizm altyapısıyla; rezervasyondan dönüşe kadar her aşamada anlaşmalı fiyatlar ve size özel ilgiyle kaliteli hizmet sunuyoruz.",
+      quote: "Nefese, doğaya ve iç dengeye geri dönüş.",
+      learnStory: "Hikayemizi Keşfedin"
     },
     // CTA Section
     cta: {
       title: "Dönüşümünüze Başlamaya Hazır mısınız?",
-      subtitle: "Mükemmel sağlıklı yaşam yolculuğunuzu tasarlamamıza izin verin. Samimi kamplardan grup gezilerine kadar her adımda yanınızdayız.",
-      exploreRetreats: "Kampları Keşfet",
+      subtitle: "Size özel mükemmel bir wellness yolculuğu tasarlayalım. Özel kamplardan grup turlarına kadar her adımda yanınızdayız.",
+      exploreRetreats: "Kampları Keşfedin",
       contactUs: "Bize Ulaşın"
     },
     // Features
     features: {
-      authenticYoga: "Otantik Yoga",
-      authenticYogaDesc: "Sertifikalı eğitmenlerden geleneksel uygulamalar",
+      authenticYoga: "Özgün Yoga",
+      authenticYogaDesc: "Sertifikalı eğitmenlerle geleneksel yoga pratikleri",
       holisticWellness: "Bütünsel Sağlık",
-      holisticWellnessDesc: "Zihin, beden ve ruh uyumda",
-      curatedDestinations: "Seçkin Destinasyonlar",
-      curatedDestinationsDesc: "Dünya çapında özenle seçilmiş lokasyonlar",
+      holisticWellnessDesc: "Zihin, beden ve ruh dengesi",
+      curatedDestinations: "Özenle Seçilmiş Rotalar",
+      curatedDestinationsDesc: "Dünyanın dört bir yanından el ile seçilmiş lokasyonlar",
       professionalService: "Profesyonel Hizmet",
-      professionalServiceDesc: "Her seyahati destekleyen lisanslı acente"
+      professionalServiceDesc: "A'dan Z'ye lisanslı acente güvencesi"
     },
     // Footer
     footer: {
-      description: "Omar Sharif tarafından sunulan dönüştürücü yoga kampları ve profesyonel turizm hizmetleri, ENC HOLIDAY tarafından işletilmektedir.",
-      quickLinks: "Hızlı Linkler",
-      services: "Hizmetler",
+      description: "Omar Sharif imzalı dönüşüm odaklı yoga kampları ve profesyonel turizm hizmetleri. ENC HOLIDAY güvencesiyle.",
+      quickLinks: "Hızlı Erişim",
+      services: "Hizmetlerimiz",
       contact: "İletişim",
-      copyright: "© 2026 Omar Sharif International Yoga. ENC HOLIDAY tarafından işletilmektedir.",
+      copyright: "© 2026 Omar Sharif International Yoga. ENC HOLIDAY işletmesidir.",
       rights: "Lisanslı Seyahat Acentesi • Tüm Hakları Saklıdır"
     },
     // Contact Page
     contactPage: {
-      tagline: "İletişime Geçin",
-      title: "Bize Ulaşın",
-      subtitle: "Dönüşümünüze başlamaya hazır mısınız? Mükemmel sağlıklı yaşam yolculuğunuzu planlamanıza yardımcı olmak için buradayız.",
-      letsConnect: "Bağlantı Kuralım",
+      tagline: "Bizimle İletişime Geçin",
+      title: "İletişim",
+      subtitle: "Dönüşüm yolculuğunuza başlamak mı istiyorsunuz? Hayalinizdeki wellness deneyimini planlamanız için buradayız.",
+      letsConnect: "İletişim Bilgilerimiz",
       address: "Adres",
       phone: "Telefon",
       email: "E-posta",
-      sendMessage: "Bize Mesaj Gönderin",
-      name: "İsim",
-      namePlaceholder: "Adınız",
-      emailPlaceholder: "email@adresiniz.com",
-      phonePlaceholder: "+90 (555) 000-0000",
-      message: "Mesaj",
-      messagePlaceholder: "Hayalinizdeki kampı anlatın...",
-      send: "Mesaj Gönder",
-      thankYou: "Mesajınız için teşekkürler! En kısa sürede size dönüş yapacağız."
+      sendMessage: "Mesaj Gönderin",
+      name: "Adınız Soyadınız",
+      namePlaceholder: "Adınızı ve soyadınızı yazın",
+      emailPlaceholder: "ornek@email.com",
+      phonePlaceholder: "+90 (5XX) XXX XX XX",
+      message: "Mesajınız",
+      messagePlaceholder: "Hayalinizdeki yoga kampını bize anlatın...",
+      send: "Gönder",
+      thankYou: "Mesajınız bize ulaştı! En kısa sürede sizinle iletişime geçeceğiz."
     },
     // Retreats Page
     retreatsPage: {
-      tagline: "Kamplarımız",
-      title: "Dönüştürücü Yolculuklar",
-      subtitle: "Yoga, meditasyon ve kültürel keşifle kendinizle yeniden bağlantı kurmanız için özenle hazırlanmış kamplarımızı keşfedin."
+      tagline: "Yoga Kamplarımız",
+      title: "Dönüşüm Yolculukları",
+      subtitle: "Yoga, meditasyon ve kültürel deneyimlerle kendinizle yeniden buluşmanız için özenle hazırladığımız kamplarımızı keşfedin."
     },
     // About Page
     aboutPage: {
       tagline: "Hakkımızda",
       title: "Hikayemiz",
-      subtitle: "Dönüştürücü yoga yolculuklarında kadim bilgeliğin modern mükemmellikle buluştuğu yer.",
+      subtitle: "Kadim bilgeliğin modern mükemmellikle buluştuğu dönüşüm yolculukları.",
       startJourney: "Yolculuğunuza Başlayın"
     },
     // Services Page
     servicesPage: {
-      tagline: "Sunduklarımız",
+      tagline: "Neler Sunuyoruz?",
       title: "Hizmetlerimiz",
-      subtitle: "ENC HOLIDAY'in profesyonel turizm uzmanlığıyla desteklenen kapsamlı seyahat ve sağlıklı yaşam hizmetleri."
+      subtitle: "ENC HOLIDAY'in profesyonel turizm deneyimiyle kapsamlı seyahat ve wellness hizmetleri."
     },
     // Why Us Page
     whyUsPage: {
-      tagline: "Neden Bizi Seçmelisiniz",
-      title: "Kutsal Bir Mola",
-      subtitle: "Kamplarımız kaçış değil — kalıcı dönüşüme açılan kapılardır.",
-      professionalTitle: "Profesyonel Turizm Mükemmelliği",
-      professionalDesc: "ENC HOLIDAY'in profesyonel turizm altyapısıyla desteklenerek, rezervasyondan dönüşe kadar sözleşmeli fiyatlar ve kişiselleştirilmiş bakımla kaliteli hizmet garantisi veriyoruz. Lisanslı acentemiz yolculuğunuzun her yönünün uzmanlık ve özenle ele alınmasını sağlar.",
-      happyTravelers: "Mutlu Gezgin",
+      tagline: "Neden Biz?",
+      title: "Huzurlu Bir Mola",
+      subtitle: "Kamplarımız sadece bir kaçış değil; kalıcı dönüşümün kapılarını aralıyor.",
+      professionalTitle: "Profesyonel Turizm Deneyimi",
+      professionalDesc: "ENC HOLIDAY'in güçlü turizm altyapısıyla; rezervasyondan dönüşe kadar her aşamada anlaşmalı fiyatlar ve kişiye özel ilgiyle kaliteli hizmet garantisi sunuyoruz. Lisanslı acentemiz, yolculuğunuzun her detayını titizlikle ve profesyonelce yönetir.",
+      happyTravelers: "Mutlu Misafir",
       destinations: "Destinasyon",
-      yearsExperience: "Yıllık Deneyim"
+      yearsExperience: "Yıllık Tecrübe"
     },
     // Gallery Page
     galleryPage: {
       tagline: "Görsel Yolculuk",
       title: "Galerimiz",
-      subtitle: "Dünya çapındaki kamplarımızdan huzur, dönüşüm ve bağlantı anlarını keşfedin."
+      subtitle: "Dünyanın dört bir yanındaki kamplarımızdan huzur, dönüşüm ve bağ kurma anlarını keşfedin."
     }
   }
 };
@@ -346,7 +346,7 @@ export const retreats = {
       location: "Ubud, Bali",
       duration: "7 Gün",
       price: 1899,
-      description: "Bali'nin manevi kalbinde günlük yoga seansları, meditasyon ve kadim tapınaklarda geleneksel şifa törenleriyle kendinizi bulun.",
+      description: "Bali'nin ruhani atmosferinde her gün yoga seansları, meditasyon ve kadim tapınaklarda geleneksel şifa ritüelleriyle kendinizi yeniden keşfedin.",
       image: "https://images.unsplash.com/photo-1704253411612-e4deb715dcd8?w=800&q=80"
     },
     {
@@ -355,25 +355,25 @@ export const retreats = {
       location: "Pokhara, Nepal",
       duration: "10 Gün",
       price: 2199,
-      description: "Himalayaların gölgesinde otantik Nepal yoga gelenekleri, meditasyon ve dağ yürüyüşleriyle manevi uyanışı deneyimleyin.",
+      description: "Himalayaların eteklerinde otantik Nepal yoga gelenekleri, meditasyon ve dağ yürüyüşleriyle ruhsal bir uyanış deneyimleyin.",
       image: "https://images.unsplash.com/photo-1681018756175-da11bf6f06ac?w=800&q=80"
     },
     {
       id: 3,
-      title: "Tayland Tropikal Sağlık",
+      title: "Tayland Tropikal Wellness",
       location: "Koh Samui, Tayland",
       duration: "6 Gün",
       price: 1599,
-      description: "Bozulmamış Tayland plajlarında geleneksel Tai yogası, meditasyon, bütünsel spa tedavileri ve ada keşfiyle dengenizi bulun.",
+      description: "Tayland'ın bozulmamış plajlarında geleneksel Tay yogası, meditasyon, bütünsel spa uygulamaları ve ada keşfiyle iç dengenizi bulun.",
       image: "https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?w=800&q=80"
     },
     {
       id: 4,
-      title: "Vietnam Bilinçli Kaçış",
+      title: "Vietnam Farkındalık Kaçamağı",
       location: "Ha Long Körfezi, Vietnam",
       duration: "8 Gün",
       price: 1799,
-      description: "Ha Long Körfezi'nin mistik kireçtaşı kayalıkları arasında gün doğumu yogası, meditasyon gezileri ve Vietnam sağlık gelenekleriyle iç huzuru keşfedin.",
+      description: "Ha Long Körfezi'nin büyüleyici kireçtaşı kayalıkları arasında gün doğumu yogası, tekne meditasyonları ve Vietnam wellness gelenekleriyle iç huzuru yakalayın.",
       image: "https://images.unsplash.com/photo-1661019912526-fb427f1dc77c?w=800&q=80"
     },
     {
@@ -382,7 +382,7 @@ export const retreats = {
       location: "Stone Town, Zanzibar",
       duration: "7 Gün",
       price: 2099,
-      description: "Zanzibar'ın egzotik kıyılarında sahil yogası, Svahili kültür deneyimi, baharat turları ve tropikal şifa terapileriyle rahatlayın.",
+      description: "Zanzibar'ın egzotik sahillerinde kumsalda yoga, Svahili kültürü, baharat turları ve tropikal şifa terapileriyle kendinizi şımartın.",
       image: "https://images.unsplash.com/photo-1646668072507-b2215b873c70?w=800&q=80"
     },
     {
@@ -391,7 +391,7 @@ export const retreats = {
       location: "Ella, Sri Lanka",
       duration: "9 Gün",
       price: 1999,
-      description: "Sri Lanka'nın yemyeşil çay bölgesinde kişiselleştirilmiş sağlık programları, yoga ve doğa yürüyüşleriyle kadim Ayurvedik şifayı kucaklayın.",
+      description: "Sri Lanka'nın yemyeşil çay tepelerinde size özel wellness programları, yoga ve doğa yürüyüşleriyle kadim Ayurveda şifasını deneyimleyin.",
       image: "https://images.unsplash.com/photo-1544015759-237f87d55ef3?w=800&q=80"
     },
     {
@@ -400,16 +400,16 @@ export const retreats = {
       location: "Kazbegi, Gürcistan",
       duration: "6 Gün",
       price: 1699,
-      description: "Nefes kesici Kafkas Dağları'nda dağ yogası, Gürcü gelenekleri, doğal kaplıcalar ve manzaralı yürüyüşlerle huzuru bulun.",
+      description: "Nefes kesen Kafkas Dağları'nda dağ yogası, Gürcü gelenekleri, doğal kaplıcalar ve muhteşem manzaralı yürüyüşlerle huzura kavuşun.",
       image: "https://images.unsplash.com/photo-1558987830-b9fc9f156565?w=800&q=80"
     },
     {
       id: 8,
-      title: "Türkiye Kapadokya Rüyaları",
+      title: "Kapadokya Rüyası",
       location: "Göreme, Türkiye",
       duration: "5 Gün",
       price: 1499,
-      description: "Peri bacaları arasında büyülü yoga seansları, gün doğumunda sıcak hava balonu meditasyonu ve Kapadokya'da Türk hamamı ritüellerini deneyimleyin.",
+      description: "Peri bacaları arasında büyülü yoga seansları, gün doğumunda balon turu eşliğinde meditasyon ve geleneksel Türk hamamı ritüellerini yaşayın.",
       image: "https://images.unsplash.com/photo-1724155733673-c3d68fe5b68d?w=800&q=80"
     }
   ]
@@ -445,26 +445,26 @@ export const features = {
   tr: [
     {
       id: 1,
-      title: "Otantik Yoga",
-      description: "Sertifikalı eğitmenlerden geleneksel uygulamalar",
+      title: "Özgün Yoga",
+      description: "Sertifikalı eğitmenlerle geleneksel yoga pratikleri",
       icon: "leaf"
     },
     {
       id: 2,
       title: "Bütünsel Sağlık",
-      description: "Zihin, beden ve ruh uyumda",
+      description: "Zihin, beden ve ruh dengesi",
       icon: "heart"
     },
     {
       id: 3,
-      title: "Seçkin Destinasyonlar",
-      description: "Dünya çapında özenle seçilmiş lokasyonlar",
+      title: "Özenle Seçilmiş Rotalar",
+      description: "Dünyanın dört bir yanından el ile seçilmiş lokasyonlar",
       icon: "globe"
     },
     {
       id: 4,
       title: "Profesyonel Hizmet",
-      description: "Her seyahati destekleyen lisanslı acente",
+      description: "A'dan Z'ye lisanslı acente güvencesi",
       icon: "shield"
     }
   ]
@@ -483,9 +483,9 @@ export const navLinks = {
   tr: [
     { name: "Ana Sayfa", href: "/" },
     { name: "Hakkımızda", href: "/about" },
-    { name: "Kamplar", href: "/retreats" },
-    { name: "Hizmetler", href: "/services" },
-    { name: "Neden Biz", href: "/why-us" },
+    { name: "Yoga Kampları", href: "/retreats" },
+    { name: "Hizmetlerimiz", href: "/services" },
+    { name: "Neden Biz?", href: "/why-us" },
     { name: "Galeri", href: "/gallery" },
     { name: "İletişim", href: "/contact" }
   ]
@@ -501,9 +501,9 @@ export const services = {
   ],
   tr: [
     "Tur Organizasyonu",
-    "Transferler & Rezervasyonlar",
-    "Uçak Biletleri",
-    "Charter Hizmetleri",
+    "Transfer ve Rezervasyon",
+    "Uçak Bileti",
+    "Özel Charter Hizmetleri",
     "Kurumsal Etkinlikler"
   ]
 };
@@ -519,8 +519,8 @@ export const quickLinks = {
   tr: [
     { name: "Ana Sayfa", href: "/" },
     { name: "Hakkımızda", href: "/about" },
-    { name: "Kamplar", href: "/retreats" },
-    { name: "Hizmetler", href: "/services" },
+    { name: "Yoga Kampları", href: "/retreats" },
+    { name: "Hizmetlerimiz", href: "/services" },
     { name: "İletişim", href: "/contact" }
   ]
 };
