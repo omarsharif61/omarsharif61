@@ -3,7 +3,10 @@ import { Link, useLocation } from 'react-router-dom';
 import { Globe, Menu, X } from 'lucide-react';
 import { navLinks } from '../data/mock';
 
-const LOGO_URL = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
+// New logo with black background - works great on dark surfaces
+const LOGO_BLACK_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/x03fqkve_omar-sharif-logo-highres%20%281%29.png";
+// Original logo with white background - works great on light surfaces
+const LOGO_WHITE_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,11 +22,13 @@ const Navbar = () => {
   }, []);
 
   const isHomePage = location.pathname === '/';
-  const navBg = isScrolled || !isHomePage ? 'bg-white shadow-sm' : 'bg-white/10 backdrop-blur-sm';
-  const textColor = isScrolled || !isHomePage ? 'text-gray-800' : 'text-white';
-  const logoContainerStyle = isScrolled || !isHomePage 
-    ? 'bg-transparent' 
-    : 'bg-white/90 rounded-md p-1.5';
+  const isOnDarkBg = !isScrolled && isHomePage;
+  
+  const navBg = isOnDarkBg ? 'bg-transparent' : 'bg-white shadow-sm';
+  const textColor = isOnDarkBg ? 'text-white' : 'text-gray-800';
+  
+  // Use black-bg logo on dark backgrounds (transparent nav), white-bg logo on light backgrounds (white nav)
+  const currentLogo = isOnDarkBg ? LOGO_BLACK_BG : LOGO_WHITE_BG;
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
@@ -31,14 +36,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <div className={`transition-all duration-300 ${logoContainerStyle}`}>
-              <img 
-                src={LOGO_URL} 
-                alt="Omar Sharif - International Yoga" 
-                className="h-10 md:h-12 w-auto object-contain"
-                style={{ maxWidth: '150px' }}
-              />
-            </div>
+            <img 
+              src={currentLogo} 
+              alt="Omar Sharif - International Yoga" 
+              className="h-12 md:h-14 w-auto object-contain transition-all duration-300"
+              style={{ maxWidth: '160px' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -80,10 +83,10 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white rounded-lg shadow-lg mt-2 py-4 px-4 absolute left-4 right-4">
-            {/* Mobile Logo */}
+            {/* Mobile Logo - always use white background version */}
             <div className="pb-4 mb-4 border-b border-gray-100">
               <img 
-                src={LOGO_URL} 
+                src={LOGO_WHITE_BG} 
                 alt="Omar Sharif - International Yoga" 
                 className="h-10 w-auto object-contain"
               />
