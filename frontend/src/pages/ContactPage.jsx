@@ -3,9 +3,13 @@ import { MapPin, Phone, Mail, Send } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
-import { contactInfo } from '../data/mock';
+import { contactInfo, translations } from '../data/mock';
+import { useLanguage } from '../context/LanguageContext';
 
 const ContactPage = () => {
+  const { language } = useLanguage();
+  const t = translations[language].contactPage;
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,7 +24,6 @@ const ContactPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Mock submission
     setSubmitted(true);
     setTimeout(() => setSubmitted(false), 3000);
     setFormData({ name: '', email: '', phone: '', message: '' });
@@ -34,13 +37,13 @@ const ContactPage = () => {
       <section className="pt-32 pb-16 bg-[#fafaf8]">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <p className="text-[#8B9D83] uppercase tracking-[0.2em] text-sm mb-4 font-medium">
-            Get In Touch
+            {t.tagline}
           </p>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif text-gray-900 mb-6">
-            Contact <span className="italic">Us</span>
+            {t.title.split(' ')[0]} <span className="italic">{t.title.split(' ').slice(1).join(' ')}</span>
           </h1>
           <p className="text-gray-600 max-w-2xl text-lg">
-            Ready to begin your transformation? We're here to help you plan your perfect wellness journey.
+            {t.subtitle}
           </p>
         </div>
       </section>
@@ -52,7 +55,7 @@ const ContactPage = () => {
             {/* Contact Info */}
             <div>
               <h2 className="text-2xl font-serif text-gray-900 mb-8">
-                Let's Connect
+                {t.letsConnect}
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -60,7 +63,7 @@ const ContactPage = () => {
                     <MapPin className="w-6 h-6 text-[#8B9D83]" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-gray-900 mb-1">Address</h3>
+                    <h3 className="font-medium text-gray-900 mb-1">{t.address}</h3>
                     <p className="text-gray-600 text-sm">{contactInfo.address}</p>
                   </div>
                 </div>
@@ -69,7 +72,7 @@ const ContactPage = () => {
                     <Phone className="w-6 h-6 text-[#8B9D83]" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-gray-900 mb-1">Phone</h3>
+                    <h3 className="font-medium text-gray-900 mb-1">{t.phone}</h3>
                     <a href={`tel:${contactInfo.phone}`} className="text-gray-600 text-sm hover:text-[#8B9D83] transition-colors">
                       {contactInfo.phone}
                     </a>
@@ -80,7 +83,7 @@ const ContactPage = () => {
                     <Mail className="w-6 h-6 text-[#8B9D83]" />
                   </div>
                   <div>
-                    <h3 className="font-medium text-gray-900 mb-1">Email</h3>
+                    <h3 className="font-medium text-gray-900 mb-1">{t.email}</h3>
                     <a href={`mailto:${contactInfo.email}`} className="text-gray-600 text-sm hover:text-[#8B9D83] transition-colors">
                       {contactInfo.email}
                     </a>
@@ -92,16 +95,16 @@ const ContactPage = () => {
             {/* Contact Form */}
             <div className="bg-[#fafaf8] rounded-2xl p-8">
               <h2 className="text-2xl font-serif text-gray-900 mb-6">
-                Send Us a Message
+                {t.sendMessage}
               </h2>
               {submitted && (
                 <div className="mb-6 p-4 bg-[#e8ede5] text-[#5a6b52] rounded-xl text-sm">
-                  Thank you for your message! We'll get back to you soon.
+                  {t.thankYou}
                 </div>
               )}
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">{t.name}</label>
                   <input
                     type="text"
                     name="name"
@@ -109,11 +112,11 @@ const ContactPage = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8B9D83] focus:border-transparent transition-all"
-                    placeholder="Your name"
+                    placeholder={t.namePlaceholder}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">{t.email}</label>
                   <input
                     type="email"
                     name="email"
@@ -121,22 +124,22 @@ const ContactPage = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8B9D83] focus:border-transparent transition-all"
-                    placeholder="your@email.com"
+                    placeholder={t.emailPlaceholder}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">{t.phone}</label>
                   <input
                     type="tel"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8B9D83] focus:border-transparent transition-all"
-                    placeholder="+1 (555) 000-0000"
+                    placeholder={t.phonePlaceholder}
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-2">{t.message}</label>
                   <textarea
                     name="message"
                     value={formData.message}
@@ -144,14 +147,14 @@ const ContactPage = () => {
                     required
                     rows={4}
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-[#8B9D83] focus:border-transparent transition-all resize-none"
-                    placeholder="Tell us about your dream retreat..."
+                    placeholder={t.messagePlaceholder}
                   />
                 </div>
                 <button
                   type="submit"
                   className="w-full bg-[#8B9D83] hover:bg-[#7a8c73] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 flex items-center justify-center"
                 >
-                  Send Message
+                  {t.send}
                   <Send className="ml-2 w-5 h-5" />
                 </button>
               </form>
