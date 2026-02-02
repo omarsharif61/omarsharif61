@@ -2,7 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-const LOGO_URL = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
+// Logo with black background - perfect for dark hero overlay
+const LOGO_BLACK_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/x03fqkve_omar-sharif-logo-highres%20%281%29.png";
 const HERO_BG = "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=80";
 
 const Hero = () => {
@@ -29,20 +30,6 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
         <div className="max-w-3xl">
-          {/* Brand Logo as Hero Anchor */}
-          <div className="mb-8">
-            <div 
-              className="h-20 md:h-24 lg:h-28 w-auto drop-shadow-lg bg-white/90 rounded-lg p-3 backdrop-blur-sm"
-              style={{ maxWidth: '220px', display: 'inline-block' }}
-            >
-              <img 
-                src={LOGO_URL} 
-                alt="Omar Sharif - International Yoga" 
-                className="h-full w-auto object-contain"
-              />
-            </div>
-          </div>
-
           {/* Tagline */}
           <p className="text-[#c4cfc0] uppercase tracking-[0.2em] text-sm mb-6 font-medium">
             International Yoga Tourism Business
