@@ -32,8 +32,8 @@ const Navbar = () => {
             <img 
               src={LOGO_URL} 
               alt="Omar Sharif - International Yoga" 
-              className={`h-12 md:h-14 w-auto object-contain transition-all duration-300 ${logoFilter}`}
-              style={{ maxWidth: '160px' }}
+              className="h-12 md:h-14 w-auto object-contain transition-all duration-300"
+              style={{ maxWidth: '160px', ...logoStyle }}
             />
           </Link>
 
