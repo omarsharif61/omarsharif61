@@ -21,7 +21,7 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/';
   const navBg = isScrolled || !isHomePage ? 'bg-white shadow-sm' : 'bg-transparent';
   const textColor = isScrolled || !isHomePage ? 'text-gray-800' : 'text-white';
-  const logoFilter = isScrolled || !isHomePage ? '' : 'brightness-0 invert';
+  const logoStyle = isScrolled || !isHomePage ? {} : { filter: 'brightness(0) invert(1)' };
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
