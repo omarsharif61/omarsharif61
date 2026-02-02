@@ -19,9 +19,11 @@ const Navbar = () => {
   }, []);
 
   const isHomePage = location.pathname === '/';
-  const navBg = isScrolled || !isHomePage ? 'bg-white shadow-sm' : 'bg-transparent';
+  const navBg = isScrolled || !isHomePage ? 'bg-white shadow-sm' : 'bg-white/10 backdrop-blur-sm';
   const textColor = isScrolled || !isHomePage ? 'text-gray-800' : 'text-white';
-  const logoStyle = isScrolled || !isHomePage ? {} : { filter: 'brightness(0) invert(1)' };
+  const logoContainerStyle = isScrolled || !isHomePage 
+    ? 'bg-transparent' 
+    : 'bg-white/90 rounded-md p-1.5';
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
