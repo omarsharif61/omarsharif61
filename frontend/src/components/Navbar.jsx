@@ -3,6 +3,8 @@ import { Link, useLocation } from 'react-router-dom';
 import { Globe, Menu, X } from 'lucide-react';
 import { navLinks } from '../data/mock';
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,7 +21,7 @@ const Navbar = () => {
   const isHomePage = location.pathname === '/';
   const navBg = isScrolled || !isHomePage ? 'bg-white shadow-sm' : 'bg-transparent';
   const textColor = isScrolled || !isHomePage ? 'text-gray-800' : 'text-white';
-  const logoColor = isScrolled || !isHomePage ? 'text-gray-900' : 'text-white';
+  const logoFilter = isScrolled || !isHomePage ? '' : 'brightness-0 invert';
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navBg}`}>
@@ -27,9 +29,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <span className={`text-2xl font-serif ${logoColor} transition-colors duration-300`}>
-              International <span className="italic font-light">Yoga</span>
-            </span>
+            <img 
+              src={LOGO_URL} 
+              alt="Omar Sharif - International Yoga" 
+              className={`h-12 md:h-14 w-auto object-contain transition-all duration-300 ${logoFilter}`}
+              style={{ maxWidth: '160px' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -71,6 +76,14 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white rounded-lg shadow-lg mt-2 py-4 px-4 absolute left-4 right-4">
+            {/* Mobile Logo */}
+            <div className="pb-4 mb-4 border-b border-gray-100">
+              <img 
+                src={LOGO_URL} 
+                alt="Omar Sharif - International Yoga" 
+                className="h-10 w-auto object-contain"
+              />
+            </div>
             {navLinks.map((link) => (
               <Link
                 key={link.name}
