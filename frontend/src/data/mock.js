@@ -526,7 +526,7 @@ export const quickLinks = {
 };
 
 export const contactInfo = {
-  address: "Orta, Hasan Tahsin Kirali Cd. No: 2/A, 61600 Sürmene/Trabzon",
+  address: "Orta Mh. Hasan Tahsin Kirali Cd. No: 2/A, 61600 Sürmene/Trabzon",
   phone: "+90 544 782 95 60",
   email: "omer.serif@encholiday.com",
   whatsapp: "905447829560"
