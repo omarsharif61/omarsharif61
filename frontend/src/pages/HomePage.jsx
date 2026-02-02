@@ -5,6 +5,7 @@ import WhyUs from '../components/WhyUs';
 import FeaturedRetreats from '../components/FeaturedRetreats';
 import OurStory from '../components/OurStory';
 import CTASection from '../components/CTASection';
+import Partners from '../components/Partners';
 import Footer from '../components/Footer';
 import WhatsAppButton from '../components/WhatsAppButton';
 
@@ -17,6 +18,7 @@ const HomePage = () => {
       <FeaturedRetreats />
       <OurStory />
       <CTASection />
+      <Partners />
       <Footer />
       <WhatsAppButton />
     </div>
