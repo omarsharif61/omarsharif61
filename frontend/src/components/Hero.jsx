@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import { translations } from '../data/mock';
+import { useLanguage } from '../context/LanguageContext';
 
-// Logo with black background - perfect for dark hero overlay
-const LOGO_BLACK_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/x03fqkve_omar-sharif-logo-highres%20%281%29.png";
 const HERO_BG = "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1920&q=80";
 
 const Hero = () => {
+  const { language } = useLanguage();
+  const t = translations[language].hero;
+
   const scrollToContent = () => {
     window.scrollTo({
       top: window.innerHeight,
@@ -32,19 +35,19 @@ const Hero = () => {
         <div className="max-w-3xl">
           {/* Tagline */}
           <p className="text-[#c4cfc0] uppercase tracking-[0.2em] text-sm mb-6 font-medium">
-            International Yoga Tourism Business
+            {t.tagline}
           </p>
 
           {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
-            <span className="font-serif italic">Rediscover Your </span>
-            <span className="font-serif italic text-[#c4cfc0]">Inner Peace</span>
-            <span className="font-serif"> Through Transformational Journeys</span>
+            <span className="font-serif italic">{t.titlePart1}</span>
+            <span className="font-serif italic text-[#c4cfc0]">{t.titleHighlight}</span>
+            <span className="font-serif">{t.titlePart2}</span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg text-gray-200 mb-10 max-w-2xl leading-relaxed">
-            Experience luxury wellness retreats that reconnect mind, body, and nature. Professional tourism services backed by ENC HOLIDAY's expertise.
+            {t.subtitle}
           </p>
 
           {/* CTA Buttons */}
@@ -53,14 +56,14 @@ const Hero = () => {
               to="/retreats"
               className="inline-flex items-center justify-center bg-[#8B9D83] hover:bg-[#7a8c73] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 group"
             >
-              Discover Retreats
+              {t.discoverRetreats}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
             </Link>
             <Link
               to="/contact"
               className="inline-flex items-center justify-center bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white border border-white/30 px-8 py-4 rounded-full font-medium transition-all duration-300"
             >
-              Plan Your Journey
+              {t.planJourney}
             </Link>
           </div>
         </div>
@@ -68,7 +71,7 @@ const Hero = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center cursor-pointer" onClick={scrollToContent}>
-        <span className="text-white/70 uppercase tracking-[0.2em] text-xs mb-3">Scroll</span>
+        <span className="text-white/70 uppercase tracking-[0.2em] text-xs mb-3">{t.scroll}</span>
         <div className="w-px h-12 bg-white/30 relative overflow-hidden">
           <div className="w-full h-4 bg-white/70 animate-pulse absolute top-0" />
         </div>
