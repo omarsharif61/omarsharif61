@@ -31,12 +31,16 @@ const Hero = () => {
         <div className="max-w-3xl">
           {/* Brand Logo as Hero Anchor */}
           <div className="mb-8">
-            <img 
-              src={LOGO_URL} 
-              alt="Omar Sharif - International Yoga" 
-              className="h-20 md:h-24 lg:h-28 w-auto object-contain drop-shadow-lg"
-              style={{ maxWidth: '220px', filter: 'brightness(0) invert(1)' }}
-            />
+            <div 
+              className="h-20 md:h-24 lg:h-28 w-auto drop-shadow-lg bg-white/90 rounded-lg p-3 backdrop-blur-sm"
+              style={{ maxWidth: '220px', display: 'inline-block' }}
+            >
+              <img 
+                src={LOGO_URL} 
+                alt="Omar Sharif - International Yoga" 
+                className="h-full w-auto object-contain"
+              />
+            </div>
           </div>
 
           {/* Tagline */}
