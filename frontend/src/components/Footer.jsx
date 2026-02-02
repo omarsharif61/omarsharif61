@@ -1,11 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import { quickLinks, services, contactInfo } from '../data/mock';
+import { quickLinks, services, contactInfo, translations } from '../data/mock';
+import { useLanguage } from '../context/LanguageContext';
 
-const LOGO_URL = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
+const LOGO_WHITE_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
 
 const Footer = () => {
+  const { language } = useLanguage();
+  const t = translations[language].footer;
+  const currentQuickLinks = quickLinks[language];
+  const currentServices = services[language];
+
   return (
     <footer className="bg-[#fafaf8] pt-20 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -14,14 +20,14 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-block mb-6">
               <img 
-                src={LOGO_URL} 
+                src={LOGO_WHITE_BG} 
                 alt="Omar Sharif - International Yoga" 
                 className="h-16 w-auto object-contain"
                 style={{ maxWidth: '180px' }}
               />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
-              Transformational yoga retreats and professional tourism services by Omar Sharif, operated by ENC HOLIDAY.
+              {t.description}
             </p>
             {/* Social Links */}
             <div className="flex items-center space-x-4">
@@ -47,10 +53,10 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-serif text-gray-900 mb-6">Quick Links</h4>
+            <h4 className="text-lg font-serif text-gray-900 mb-6">{t.quickLinks}</h4>
             <ul className="space-y-3">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
+              {currentQuickLinks.map((link) => (
+                <li key={link.href}>
                   <Link
                     to={link.href}
                     className="text-gray-600 hover:text-[#8B9D83] transition-colors duration-200 text-sm"
@@ -64,10 +70,10 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-lg font-serif text-gray-900 mb-6">Services</h4>
+            <h4 className="text-lg font-serif text-gray-900 mb-6">{t.services}</h4>
             <ul className="space-y-3">
-              {services.map((service) => (
-                <li key={service}>
+              {currentServices.map((service, index) => (
+                <li key={index}>
                   <span className="text-gray-600 text-sm">{service}</span>
                 </li>
               ))}
@@ -76,7 +82,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-serif text-gray-900 mb-6">Contact</h4>
+            <h4 className="text-lg font-serif text-gray-900 mb-6">{t.contact}</h4>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-5 h-5 text-[#8B9D83] mt-0.5 flex-shrink-0" />
@@ -101,10 +107,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © 2026 Omar Sharif International Yoga. Operated by ENC HOLIDAY.
+            {t.copyright}
           </p>
           <p className="text-gray-500 text-sm">
-            Licensed Travel Agency • All Rights Reserved
+            {t.rights}
           </p>
         </div>
       </div>
