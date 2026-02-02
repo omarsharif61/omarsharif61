@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Globe, Menu, X } from 'lucide-react';
-import { navLinks } from '../data/mock';
+import { navLinks, translations } from '../data/mock';
+import { useLanguage } from '../context/LanguageContext';
 
-// New logo with black background - works great on dark surfaces
+// Logo variants
 const LOGO_BLACK_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/x03fqkve_omar-sharif-logo-highres%20%281%29.png";
-// Original logo with white background - works great on light surfaces
 const LOGO_WHITE_BG = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { language, toggleLanguage } = useLanguage();
+
+  const t = translations[language].nav;
+  const currentNavLinks = navLinks[language];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,8 +30,6 @@ const Navbar = () => {
   
   const navBg = isOnDarkBg ? 'bg-transparent' : 'bg-white shadow-sm';
   const textColor = isOnDarkBg ? 'text-white' : 'text-gray-800';
-  
-  // Use black-bg logo on dark backgrounds (transparent nav), white-bg logo on light backgrounds (white nav)
   const currentLogo = isOnDarkBg ? LOGO_BLACK_BG : LOGO_WHITE_BG;
 
   return (
@@ -46,9 +48,9 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            {navLinks.map((link) => (
+            {currentNavLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.href}
                 to={link.href}
                 className={`${textColor} hover:text-[#8B9D83] transition-colors duration-200 text-sm font-medium`}
               >
@@ -59,15 +61,19 @@ const Navbar = () => {
 
           {/* Right side items */}
           <div className="hidden lg:flex items-center space-x-4">
-            <button className={`flex items-center space-x-1 ${textColor} hover:text-[#8B9D83] transition-colors duration-200`}>
+            {/* Language Switcher */}
+            <button 
+              onClick={toggleLanguage}
+              className={`flex items-center space-x-1.5 ${textColor} hover:text-[#8B9D83] transition-colors duration-200 px-3 py-1.5 rounded-full border ${isOnDarkBg ? 'border-white/30' : 'border-gray-200'}`}
+            >
               <Globe className="w-4 h-4" />
-              <span className="text-sm">EN</span>
+              <span className="text-sm font-medium">{language === 'en' ? 'EN' : 'TR'}</span>
             </button>
             <Link
               to="/contact"
               className="bg-[#8B9D83] hover:bg-[#7a8c73] text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-200"
             >
-              Book Retreat
+              {t.bookRetreat}
             </Link>
           </div>
 
@@ -83,17 +89,25 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white rounded-lg shadow-lg mt-2 py-4 px-4 absolute left-4 right-4">
-            {/* Mobile Logo - always use white background version */}
-            <div className="pb-4 mb-4 border-b border-gray-100">
+            {/* Mobile Logo */}
+            <div className="pb-4 mb-4 border-b border-gray-100 flex items-center justify-between">
               <img 
                 src={LOGO_WHITE_BG} 
                 alt="Omar Sharif - International Yoga" 
                 className="h-10 w-auto object-contain"
               />
+              {/* Mobile Language Switcher */}
+              <button 
+                onClick={toggleLanguage}
+                className="flex items-center space-x-1.5 text-gray-800 hover:text-[#8B9D83] transition-colors duration-200 px-3 py-1.5 rounded-full border border-gray-200"
+              >
+                <Globe className="w-4 h-4" />
+                <span className="text-sm font-medium">{language === 'en' ? 'EN' : 'TR'}</span>
+              </button>
             </div>
-            {navLinks.map((link) => (
+            {currentNavLinks.map((link) => (
               <Link
-                key={link.name}
+                key={link.href}
                 to={link.href}
                 className="block py-3 text-gray-800 hover:text-[#8B9D83] transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -107,7 +121,7 @@ const Navbar = () => {
                 className="block w-full bg-[#8B9D83] hover:bg-[#7a8c73] text-white px-6 py-3 rounded-full text-center font-medium transition-all duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Book Retreat
+                {t.bookRetreat}
               </Link>
             </div>
           </div>
