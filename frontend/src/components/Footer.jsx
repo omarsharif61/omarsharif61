@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import { quickLinks, services, contactInfo } from '../data/mock';
 
+const LOGO_URL = "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ydby3oq7_omar-sharif-logo-highres.png";
+
 const Footer = () => {
   return (
     <footer className="bg-[#fafaf8] pt-20 pb-8">
@@ -11,9 +13,12 @@ const Footer = () => {
           {/* Brand Column */}
           <div>
             <Link to="/" className="inline-block mb-6">
-              <span className="text-2xl font-serif text-gray-900">
-                International <span className="italic font-light">Yoga</span>
-              </span>
+              <img 
+                src={LOGO_URL} 
+                alt="Omar Sharif - International Yoga" 
+                className="h-16 w-auto object-contain"
+                style={{ maxWidth: '180px' }}
+              />
             </Link>
             <p className="text-gray-600 text-sm leading-relaxed mb-6">
               Transformational yoga retreats and professional tourism services by Omar Sharif, operated by ENC HOLIDAY.
@@ -96,7 +101,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-500 text-sm mb-4 md:mb-0">
-            © 2026 International Yoga by Omar Sharif. Operated by ENC HOLIDAY.
+            © 2026 Omar Sharif International Yoga. Operated by ENC HOLIDAY.
           </p>
           <p className="text-gray-500 text-sm">
             Licensed Travel Agency • All Rights Reserved
