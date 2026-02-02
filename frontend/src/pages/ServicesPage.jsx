@@ -45,32 +45,32 @@ const ServicesPage = () => {
     {
       icon: Leaf,
       title: "Tur Organizasyonu",
-      description: "Konaklama, aktiviteler ve tercihlerinize göre özelleştirilmiş yerel deneyimlerle eksiksiz tur paketleri."
+      description: "Konaklama, aktiviteler ve size özel yerel deneyimlerle eksiksiz tur paketleri sunuyoruz."
     },
     {
       icon: Globe,
-      title: "Transferler & Rezervasyonlar",
-      description: "Profesyonel ekibimiz tarafından yönetilen sorunsuz havalimanı transferleri ve otel rezervasyonları."
+      title: "Transfer ve Rezervasyon",
+      description: "Profesyonel ekibimizle sorunsuz havalimanı transferi ve otel rezervasyonu hizmeti."
     },
     {
       icon: Users,
-      title: "Uçak Biletleri",
-      description: "Esnek rezervasyon seçenekleriyle uluslararası ve yurtiçi uçuşlarda en iyi fırsatlar."
+      title: "Uçak Bileti",
+      description: "Esnek rezervasyon seçenekleriyle yurt içi ve yurt dışı uçuşlarda en uygun fiyatlar."
     },
     {
       icon: Shield,
-      title: "Charter Hizmetleri",
-      description: "Özel seyahat deneyimleri arayan gruplar için özel charter düzenlemeleri."
+      title: "Özel Charter Hizmetleri",
+      description: "Ayrıcalıklı seyahat deneyimi arayan gruplar için özel charter organizasyonları."
     },
     {
       icon: Award,
       title: "Kurumsal Etkinlikler",
-      description: "İşletmeler için tasarlanmış takım kurma kampları ve kurumsal sağlık programları."
+      description: "Şirketler için tasarlanmış takım ruhu geliştirme kampları ve kurumsal wellness programları."
     },
     {
       icon: Heart,
-      title: "Sağlık Programları",
-      description: "Spa tedavileri, detoks programları ve şifa terapileri dahil kişiselleştirilmiş sağlık programları."
+      title: "Wellness Programları",
+      description: "Spa uygulamaları, detoks programları ve şifa terapileri içeren kişiye özel sağlık programları."
     }
   ];
 
