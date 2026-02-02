@@ -9,7 +9,7 @@ const partners = [
   },
   {
     name: "FlyDubai",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Flydubai_logo.svg/2560px-Flydubai_logo.svg.png"
+    logo: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/nhl6gzsy_Flydubai_logo_PNG1.png"
   },
   {
     name: "Qatar Airways",
@@ -17,7 +17,7 @@ const partners = [
   },
   {
     name: "SunExpress",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/SunExpress_Logo.svg/2560px-SunExpress_Logo.svg.png"
+    logo: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/e2oez33e_SunExpress_Logo_PNG1.png"
   },
   {
     name: "Pegasus Airlines",
@@ -33,7 +33,7 @@ const partners = [
   },
   {
     name: "ENC Holiday",
-    logo: null // Will render as text
+    logo: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/4x0ji5ty_ENC-LOGOS-02.png"
   }
 ];
 
