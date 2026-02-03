@@ -564,6 +564,27 @@ export const galleryImages = [
     alt: "Meditation at ancient Bali temple",
     category: "experiences"
   },
+  // Latest uploaded images - Retreat moments
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/yxjowvcc_Screenshot%202026-02-03%20212544.jpg",
+    alt: "Sunrise yoga session",
+    category: "yoga"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/80wiysn8_Screenshot%202026-02-03%20212655.jpg",
+    alt: "Group meditation practice",
+    category: "retreats"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ckwz3ifd_Screenshot%202026-02-03%20212732.jpg",
+    alt: "Peaceful retreat moment",
+    category: "experiences"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ej5z3yna_Screenshot%202026-02-03%20212845.jpg",
+    alt: "Wellness journey highlights",
+    category: "retreats"
+  },
   // Existing gallery images
   {
     src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80",
