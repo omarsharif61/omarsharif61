@@ -533,52 +533,66 @@ export const contactInfo = {
 };
 
 export const galleryImages = [
+  // New uploaded images - Authentic retreat photos
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/klwfwujj_IMG-20251022-WA0026.jpg",
+    alt: "Yoga retreat group with flower mandala",
+    category: "retreats"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/4we2n8hx_IMG-20251022-WA00299.JPG",
+    alt: "Aerial view of yoga session with flower mandala",
+    category: "retreats"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/cvp44ew5_WhatsApp%20Image%202025-03-16%20at%2014.47.35_05ded08a.jpg",
+    alt: "Yoga instructor in namaste pose",
+    category: "instructors"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/3llmr56a_WhatsApp%20Image%202026-01-29%20at%2010.37.25%20%283%29.jpeg",
+    alt: "Water purification ritual at Bali temple",
+    category: "experiences"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ihqz5031_WhatsApp%20Image%202026-01-29%20at%2010.38.38.jpeg",
+    alt: "Yoga pose at Bali rice terraces",
+    category: "yoga"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ys91ms2g_WhatsApp%20Image%202026-01-29%20at%2011.08.10.jpeg",
+    alt: "Meditation at ancient Bali temple",
+    category: "experiences"
+  },
+  // Existing gallery images
   {
     src: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&q=80",
-    alt: "Yoga meditation at sunset"
+    alt: "Yoga meditation at sunset",
+    category: "yoga"
   },
   {
     src: "https://images.unsplash.com/photo-1545389336-cf090694435e?w=600&q=80",
-    alt: "Yoga pose in nature"
+    alt: "Yoga pose in nature",
+    category: "yoga"
   },
   {
     src: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=600&q=80",
-    alt: "Group yoga session"
+    alt: "Group yoga session",
+    category: "retreats"
   },
   {
     src: "https://images.unsplash.com/photo-1704253411612-e4deb715dcd8?w=600&q=80",
-    alt: "Bali temple"
+    alt: "Bali temple",
+    category: "destinations"
   },
   {
     src: "https://images.unsplash.com/photo-1681018756175-da11bf6f06ac?w=600&q=80",
-    alt: "Nepal mountains"
+    alt: "Nepal mountains",
+    category: "destinations"
   },
   {
     src: "https://images.unsplash.com/photo-1704314315344-cd10b9779ce6?w=600&q=80",
-    alt: "Thailand beach"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1661019912526-fb427f1dc77c?w=600&q=80",
-    alt: "Vietnam Ha Long Bay"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1646668072507-b2215b873c70?w=600&q=80",
-    alt: "Zanzibar beach"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1544015759-237f87d55ef3?w=600&q=80",
-    alt: "Sri Lanka tea plantation"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1558987830-b9fc9f156565?w=600&q=80",
-    alt: "Georgia mountains"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1724155733673-c3d68fe5b68d?w=600&q=80",
-    alt: "Turkey Cappadocia"
-  },
-  {
-    src: "https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?w=600&q=80",
-    alt: "Meditation retreat"
+    alt: "Thailand beach",
+    category: "destinations"
   }
 ];
