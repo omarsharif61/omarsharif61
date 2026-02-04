@@ -146,7 +146,7 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      tagline: "",
+      tagline: "Uluslararası İnziva ve Dönüşüm Kampları",
       titlePart1: "Dönüşüm Yolculuklarıyla ",
       titleHighlight: "İç Huzurunuzu",
       titlePart2: " Yeniden Keşfedin",
