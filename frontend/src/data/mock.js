@@ -158,7 +158,7 @@ export const translations = {
     // Why Us Section
     whyUs: {
       tagline: "Neden Biz?",
-      title: "Modern Hayattan Huzurlu Bir Mola",
+      title: "Modern Hayata Huzurlu Bir Mola",
       subtitle: "Kamplarımız sadece bir kaçış değil; kadim bilgeliği lüks seyahat deneyimiyle buluşturan, kalıcı bir dönüşümün kapılarını aralıyor."
     },
     // Featured Retreats
