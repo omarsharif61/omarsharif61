@@ -533,7 +533,28 @@ export const contactInfo = {
 };
 
 export const galleryImages = [
-  // New uploaded images - Authentic retreat photos
+  // Second row images (now first row)
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ihqz5031_WhatsApp%20Image%202026-01-29%20at%2010.38.38.jpeg",
+    alt: "Yoga pose at Bali rice terraces",
+    category: "yoga"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ys91ms2g_WhatsApp%20Image%202026-01-29%20at%2011.08.10.jpeg",
+    alt: "Meditation at ancient Bali temple",
+    category: "experiences"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/yxjowvcc_Screenshot%202026-02-03%20212544.jpg",
+    alt: "Sunrise yoga session",
+    category: "yoga"
+  },
+  {
+    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/80wiysn8_Screenshot%202026-02-03%20212655.jpg",
+    alt: "Group meditation practice",
+    category: "retreats"
+  },
+  // First row images (now second row)
   {
     src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/klwfwujj_IMG-20251022-WA0026.jpg",
     alt: "Yoga retreat group with flower mandala",
@@ -554,27 +575,7 @@ export const galleryImages = [
     alt: "Water purification ritual at Bali temple",
     category: "experiences"
   },
-  {
-    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ihqz5031_WhatsApp%20Image%202026-01-29%20at%2010.38.38.jpeg",
-    alt: "Yoga pose at Bali rice terraces",
-    category: "yoga"
-  },
-  {
-    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ys91ms2g_WhatsApp%20Image%202026-01-29%20at%2011.08.10.jpeg",
-    alt: "Meditation at ancient Bali temple",
-    category: "experiences"
-  },
-  // Latest uploaded images - Retreat moments
-  {
-    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/yxjowvcc_Screenshot%202026-02-03%20212544.jpg",
-    alt: "Sunrise yoga session",
-    category: "yoga"
-  },
-  {
-    src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/80wiysn8_Screenshot%202026-02-03%20212655.jpg",
-    alt: "Group meditation practice",
-    category: "retreats"
-  },
+  // Third row images (unchanged)
   {
     src: "https://customer-assets.emergentagent.com/job_yoga-retreat-2/artifacts/ckwz3ifd_Screenshot%202026-02-03%20212732.jpg",
     alt: "Peaceful retreat moment",
