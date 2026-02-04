@@ -33,10 +33,12 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pt-20">
         <div className="max-w-3xl">
-          {/* Tagline */}
-          <p className="text-[#c4cfc0] uppercase tracking-[0.2em] text-sm mb-6 font-medium">
-            {t.tagline}
-          </p>
+          {/* Tagline - only show if not empty */}
+          {t.tagline && (
+            <p className="text-[#c4cfc0] uppercase tracking-[0.2em] text-sm mb-6 font-medium">
+              {t.tagline}
+            </p>
+          )}
 
           {/* Title */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
