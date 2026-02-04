@@ -120,7 +120,7 @@ export const translations = {
       title: "A Sacred Pause",
       subtitle: "Our retreats are not escapes — they are gateways to long-lasting transformation.",
       professionalTitle: "Professional Tourism Excellence",
-      professionalDesc: "Backed by ENC HOLIDAY's professional tourism infrastructure, we guarantee quality service from booking to return, with contracted prices and personalized care. Our licensed agency ensures every aspect of your journey is handled with expertise and attention to detail.",
+      professionalDesc: "Backed by ENC Holiday's professional tourism infrastructure, we guarantee quality service from booking to return, with contracted prices and personalized care. Our licensed agency ensures every aspect of your journey is handled with expertise and attention to detail.",
       happyTravelers: "Happy Travelers",
       destinations: "Destinations",
       yearsExperience: "Years Experience"
