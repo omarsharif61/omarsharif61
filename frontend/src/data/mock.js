@@ -242,7 +242,7 @@ export const translations = {
     servicesPage: {
       tagline: "Neler Sunuyoruz?",
       title: "Hizmetlerimiz",
-      subtitle: "ENC HOLIDAY'in profesyonel turizm deneyimiyle kapsamlı seyahat ve wellness hizmetleri."
+      subtitle: "ENC Holiday'in profesyonel turizm deneyimiyle kapsamlı seyahat ve wellness hizmetleri."
     },
     // Why Us Page
     whyUsPage: {
