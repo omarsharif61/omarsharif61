@@ -199,7 +199,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description: "Omar Sharif imzalı dönüşüm odaklı yoga kampları ve profesyonel turizm hizmetleri. ENC HOLIDAY güvencesiyle.",
+      description: "Omar Sharif Retreats imzalı dönüşüm odaklı yoga kampları ve profesyonel turizm hizmetleri. ENC Holiday güvencesiyle.",
       quickLinks: "Hızlı Erişim",
       services: "Hizmetlerimiz",
       contact: "İletişim",
