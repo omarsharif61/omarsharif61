@@ -203,7 +203,7 @@ export const translations = {
       quickLinks: "Hızlı Erişim",
       services: "Hizmetlerimiz",
       contact: "İletişim",
-      copyright: "© 2026 Omar Sharif International Yoga. ENC HOLIDAY işletmesidir.",
+      copyright: "© 2026 Omar Sharif Retreats bir ENC Holiday işletmesidir.",
       rights: "Lisanslı Seyahat Acentesi • Tüm Hakları Saklıdır"
     },
     // Contact Page
