@@ -181,7 +181,7 @@ export const translations = {
     },
     // CTA Section
     cta: {
-      title: "Dönüşümünüze Başlamaya Hazır mısınız?",
+      title: "Dönüşüme Başlamaya Hazır mısınız?",
       subtitle: "Size özel mükemmel bir wellness yolculuğu tasarlayalım. Özel kamplardan grup turlarına kadar her adımda yanınızdayız.",
       exploreRetreats: "Kampları Keşfedin",
       contactUs: "Bize Ulaşın"
