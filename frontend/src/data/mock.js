@@ -250,7 +250,7 @@ export const translations = {
       title: "Huzurlu Bir Mola",
       subtitle: "Kamplarımız sadece bir kaçış değil; kalıcı dönüşümün kapılarını aralıyor.",
       professionalTitle: "Profesyonel Turizm Deneyimi",
-      professionalDesc: "ENC HOLIDAY'in güçlü turizm altyapısıyla; rezervasyondan dönüşe kadar her aşamada anlaşmalı fiyatlar ve kişiye özel ilgiyle kaliteli hizmet garantisi sunuyoruz. Lisanslı acentemiz, yolculuğunuzun her detayını titizlikle ve profesyonelce yönetir.",
+      professionalDesc: "ENC Holiday'in güçlü turizm altyapısıyla; rezervasyondan dönüşe kadar her aşamada anlaşmalı fiyatlar ve kişiye özel ilgiyle kaliteli hizmet garantisi sunuyoruz. Lisanslı acentemiz, yolculuğunuzun her detayını titizlikle ve profesyonelce yönetir.",
       happyTravelers: "Mutlu Misafir",
       destinations: "Destinasyon",
       yearsExperience: "Yıllık Tecrübe"
