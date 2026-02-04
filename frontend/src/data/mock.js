@@ -20,7 +20,7 @@ export const translations = {
       titlePart1: "Rediscover Your ",
       titleHighlight: "Inner Peace",
       titlePart2: " Through Transformational Journeys",
-      subtitle: "Experience luxury wellness retreats that reconnect mind, body, and nature. Professional tourism services backed by ENC HOLIDAY's expertise.",
+      subtitle: "Experience luxury wellness retreats that reconnect mind, body, and nature. Professional tourism services backed by ENC Holiday's expertise.",
       discoverRetreats: "Discover Retreats",
       planJourney: "Plan Your Journey",
       scroll: "Scroll"
