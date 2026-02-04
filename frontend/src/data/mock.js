@@ -44,8 +44,8 @@ export const translations = {
     story: {
       tagline: "Our Story",
       title: "Where Ancient Wisdom Meets Modern Excellence",
-      paragraph1: "International Yoga by Omar Sharif is more than a travel company — it's a philosophy of mindful living. We believe that yoga retreats are gateways to transformation, offering a sacred pause from the demands of modern life.",
-      paragraph2: "Backed by ENC HOLIDAY's professional tourism infrastructure, we guarantee quality service from booking to return, with contracted prices and personalized care.",
+      paragraph1: "Omar Sharif Retreats is more than a travel company — it's a philosophy of mindful living. We believe that yoga retreats are gateways to transformation, offering a sacred pause from the demands of modern life.",
+      paragraph2: "Backed by ENC Holiday's professional tourism infrastructure, we guarantee quality service from booking to return, with contracted prices and personalized care.",
       quote: "Return to breath, nature, and inner balance.",
       learnStory: "Learn Our Story"
     },
