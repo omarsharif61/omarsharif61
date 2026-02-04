@@ -69,7 +69,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      description: "Transformational yoga retreats and professional tourism services by Omar Sharif, operated by ENC HOLIDAY.",
+      description: "Omar Sharif Retreats transformation-oriented yoga retreats and professional tourism services. With the assurance of ENC Holiday.",
       quickLinks: "Quick Links",
       services: "Services",
       contact: "Contact",
