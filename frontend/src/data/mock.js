@@ -73,7 +73,7 @@ export const translations = {
       quickLinks: "Quick Links",
       services: "Services",
       contact: "Contact",
-      copyright: "© 2026 Omar Sharif International Yoga. Operated by ENC HOLIDAY.",
+      copyright: "© 2026 Omar Sharif Retreats. Operated by ENC Holiday.",
       rights: "Licensed Travel Agency • All Rights Reserved"
     },
     // Contact Page
