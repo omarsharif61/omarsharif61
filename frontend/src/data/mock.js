@@ -16,7 +16,7 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      tagline: "International Yoga Tourism Business",
+      tagline: "International Retreat Camps",
       titlePart1: "Rediscover Your ",
       titleHighlight: "Inner Peace",
       titlePart2: " Through Transformational Journeys",
