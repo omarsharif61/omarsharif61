@@ -112,7 +112,7 @@ export const translations = {
     servicesPage: {
       tagline: "What We Offer",
       title: "Our Services",
-      subtitle: "Comprehensive travel and wellness services backed by ENC HOLIDAY's professional tourism expertise."
+      subtitle: "Comprehensive travel and wellness services backed by ENC Holiday's professional tourism expertise."
     },
     // Why Us Page
     whyUsPage: {
