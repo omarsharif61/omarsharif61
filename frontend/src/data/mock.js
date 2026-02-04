@@ -174,8 +174,8 @@ export const translations = {
     story: {
       tagline: "Hikayemiz",
       title: "Kadim Bilgelik, Modern Mükemmellik",
-      paragraph1: "Omar Sharif International Yoga, sıradan bir seyahat şirketi değil; bilinçli yaşamın bir felsefesidir. Yoga kamplarının gerçek bir dönüşüm kapısı olduğuna ve modern hayatın yoğunluğundan uzaklaşmak için eşsiz bir fırsat sunduğuna inanıyoruz.",
-      paragraph2: "ENC HOLIDAY'in profesyonel turizm altyapısıyla; rezervasyondan dönüşe kadar her aşamada anlaşmalı fiyatlar ve size özel ilgiyle kaliteli hizmet sunuyoruz.",
+      paragraph1: "Omar Sharif Retreats, bilinçli yaşam felsefesini benimseyen, sıradan bir seyahat şirketinden öte bir kuruluştur. Yoga ve kişisel gelişim kamplarımız, modern hayatın stresinden uzaklaşmak ve gerçek bir dönüşüm yaşamak için benzersiz bir fırsat sunar.",
+      paragraph2: "ENC Holiday'in profesyonel turizm altyapısıyla, rezervasyondan dönüşe kadar her aşamada size özel ilgi ve avantajlı fiyatlarla kaliteli hizmet sağlıyoruz.",
       quote: "Nefese, doğaya ve iç dengeye geri dönüş.",
       learnStory: "Hikayemizi Keşfedin"
     },
