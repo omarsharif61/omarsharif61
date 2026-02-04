@@ -146,11 +146,11 @@ export const translations = {
     },
     // Hero Section
     hero: {
-      tagline: "Uluslararası Yoga Turizmi",
+      tagline: "",
       titlePart1: "Dönüşüm Yolculuklarıyla ",
       titleHighlight: "İç Huzurunuzu",
       titlePart2: " Yeniden Keşfedin",
-      subtitle: "Zihin, beden ve doğayla yeniden bağ kurmanızı sağlayan lüks wellness kamplarını deneyimleyin. ENC HOLIDAY güvencesiyle profesyonel turizm hizmeti.",
+      subtitle: "Zihin, beden ve doğayla yeniden bağ kurmanızı sağlayan lüks wellness kamplarını deneyimleyin. ENC Holiday güvencesiyle profesyonel turizm hizmetlerinin tadını çıkarın.",
       discoverRetreats: "Kampları Keşfedin",
       planJourney: "Yolculuğunuzu Planlayın",
       scroll: "Aşağı Kaydır"
